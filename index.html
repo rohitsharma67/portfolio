@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit — Graphic Designer &amp; Video Editor | Visual Storytelling Studio</title>
+<meta name="description" content="Rohit is a freelance graphic designer and video editor crafting modern branding, motion graphics, and AI-powered visuals for ambitious brands.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div class="loader" id="loader">
+  <div class="loader-mark">
+    <span class="loader-bracket">&lt;</span>
+    <span class="loader-name">RH</span>
+    <span class="loader-bracket">/&gt;</span>
+  </div>
+  <div class="loader-bar"><span id="loaderProgress"></span></div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="logo-frame">
+        <img src="./images/logo.jpeg" alt="">
+      </span>
+      <span class="logo-text">Rohit<em>.studio</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#testimonials" class="nav-link">Reviews</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary btn-small nav-cta">
+      <span>Start a Project</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="mobile-link">Home</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#work" class="mobile-link">Work</a>
+  <a href="#process" class="mobile-link">Process</a>
+  <a href="#pricing" class="mobile-link">Pricing</a>
+  <a href="#testimonials" class="mobile-link">Reviews</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="#contact" class="btn btn-primary mobile-cta">Start a Project</a>
+</div>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="grid-overlay"></div>
+    <div class="blob blob-purple"></div>
+    <div class="blob blob-cyan"></div>
+    <canvas id="particleCanvas"></canvas>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-left" data-reveal>
+      <span class="eyebrow"><span class="eyebrow-dot"></span> Freelance Graphic Designer &amp; Video Editor</span>
+      <h1 class="hero-title">
+        Turning Ideas Into<br>
+        <span class="gradient-text">Stunning Visual</span><br>
+        Experiences
+      </h1>
+      <p class="hero-sub">
+        I'm Rohit — I design bold brand identities and edit scroll-stopping video content,
+        blending classic craft with AI-powered workflows so your brand looks unmistakably premium.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-large magnetic">
+          <span>Hire Me</span>
+          <i class="fa-solid fa-arrow-up-right"></i>
+        </a>
+        <a href="#work" class="btn btn-ghost btn-large magnetic">
+          <span>View Portfolio</span>
+        </a>
+      </div>
+
+      <div class="hero-trust">
+        <div class="avatar-stack">
+          <span class="avatar" style="--c:#6E3BFF">MK</span>
+          <span class="avatar" style="--c:#00E5FF">AS</span>
+          <span class="avatar" style="--c:#A855F7">JD</span>
+          <span class="avatar" style="--c:#3B82F6">+</span>
+        </div>
+        <p>Trusted by <strong>60+</strong> founders &amp; brands worldwide</p>
+      </div>
+    </div>
+
+    <div class="hero-right" data-reveal>
+      <div class="mock-cluster">
+        <div class="mock mock-laptop">
+          <div class="mock-bar"><span></span><span></span><span></span></div>
+          <div class="mock-screen mock-timeline">
+            <div class="tl-header">
+              <i class="fa-solid fa-film"></i> composition_final.aep
+            </div>
+            <div class="tl-tracks">
+              <div class="tl-track"><span class="tl-clip" style="width:70%"></span></div>
+              <div class="tl-track"><span class="tl-clip cyan" style="width:45%;left:20%"></span></div>
+              <div class="tl-track"><span class="tl-clip purple" style="width:30%;left:55%"></span></div>
+            </div>
+            <div class="tl-playhead"></div>
+          </div>
+        </div>
+
+        <div class="mock mock-card mock-ps">
+          <div class="ps-header"><i class="fa-solid fa-layer-group"></i> Layers</div>
+          <ul class="ps-layers">
+            <li><span class="dot cyan"></span>Glow Effects</li>
+            <li><span class="dot purple"></span>Typography</li>
+            <li><span class="dot blue"></span>Background</li>
+          </ul>
+        </div>
+
+        <div class="mock mock-card mock-artwork">
+          <div class="artwork-swatch"></div>
+          <span>Brand_Poster_v3.cdr</span>
+        </div>
+
+        <div class="mock mock-badge mock-render">
+          <div class="spin-ring"></div>
+          <span>Rendering 94%</span>
+        </div>
+
+        <div class="mock-frame-glow"></div>
+      </div>
+    </div>
+  </div>
+
+  <button class="scroll-indicator" id="scrollIndicator" aria-label="Scroll down">
+    <span>Scroll</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+</section>
+
+<!-- ============ 2. ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section-inner about-grid">
+    <div class="about-visual" data-reveal>
+      <div class="about-frame">
+        <div class="about-placeholder" id="aboutPlaceholder">
+          <!-- TEMP PLACEHOLDER: this is a free stock photo (via Picsum/Unsplash) used only as a stand-in.
+               It requires an internet connection to load. Swap src below with a LOCAL file, e.g.
+               assets/images/rohit.jpg, before going live or if you need it to work offline. -->
+          <img src="./images/img1.jpeg" alt="Placeholder photo of a graphic designer at work — swap with Rohit's real photo" class="about-photo" loading="lazy" onerror="this.closest('.about-placeholder').classList.add('img-failed')">
+          <div class="about-fallback">
+            <i class="fa-solid fa-image"></i>
+            <span>Photo unavailable offline —<br>add a local image to <code>assets/images/</code></span>
+          </div>
+        </div>
+        <div class="about-tag about-tag-1"><i class="fa-solid fa-bolt"></i> Fast turnaround</div>
+        <div class="about-tag about-tag-2"><i class="fa-solid fa-wand-magic-sparkles"></i> AI-assisted</div>
+      </div>
+    </div>
+
+    <div class="about-content" data-reveal>
+      <span class="eyebrow"><span class="eyebrow-dot"></span> About Rohit</span>
+      <h2 class="section-title">Designer by trade,<br><span class="gradient-text">storyteller by nature.</span></h2>
+      <p class="section-text">
+        I'm a graphic designer and video editor with a simple belief: every brand deserves visuals
+        that feel as good as the product behind them. Over the years I've worked across branding,
+        social content, and long-form video — always chasing the same goal, work that looks premium
+        and performs.
+      </p>
+      <p class="section-text">
+        My process pairs traditional design craft in Photoshop, Illustrator, and Premiere Pro with
+        modern AI tools, so I move fast without cutting corners on quality.
+      </p>
+
+      <ul class="about-list">
+        <li><i class="fa-solid fa-check"></i> Graphic Designer &amp; Brand Visual Artist</li>
+        <li><i class="fa-solid fa-check"></i> Freelance Video Editor &amp; Motion Designer</li>
+        <li><i class="fa-solid fa-check"></i> AI-Powered Creative Workflow</li>
+      </ul>
+
+      <div class="stat-grid">
+        <div class="stat-card" data-reveal>
+          <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-card" data-reveal>
+          <span class="stat-number" data-count="180">0</span><span class="stat-plus">+</span>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-card" data-reveal>
+          <span class="stat-number" data-count="60">0</span><span class="stat-plus">+</span>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-card" data-reveal>
+          <span class="stat-number" data-count="14">0</span><span class="stat-plus">+</span>
+          <p>Tools Mastered</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow center"><span class="eyebrow-dot"></span> What I Do</span>
+      <h2 class="section-title center">Services built for <span class="gradient-text">brand growth</span></h2>
+      <p class="section-text center">From first sketch to final export — everything your brand needs to look and move like a market leader.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card glass" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-swatchbook"></i></div>
+        <h3>Graphic Design</h3>
+        <p>Logo design, brand identity systems, business cards, flyers, brochures, and packaging that give your brand a consistent, premium visual language.</p>
+        <ul class="service-tags">
+          <li>Logo Design</li><li>Brand Identity</li><li>Packaging</li>
+        </ul>
+      </div>
+
+      <div class="service-card glass" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-share-nodes"></i></div>
+        <h3>Social &amp; Marketing Design</h3>
+        <p>Social media posts, YouTube thumbnails, posters, and banners engineered to stop the scroll and drive clicks across every platform.</p>
+        <ul class="service-tags">
+          <li>Social Posts</li><li>Thumbnails</li><li>Posters &amp; Banners</li>
+        </ul>
+      </div>
+
+      <div class="service-card glass" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-image"></i></div>
+        <h3>Image Editing</h3>
+        <p>Precision photo manipulation, background removal, and retouching that keeps every image looking natural, sharp, and on-brand.</p>
+        <ul class="service-tags">
+          <li>Photo Manipulation</li><li>Background Removal</li>
+        </ul>
+      </div>
+
+      <div class="service-card glass" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3>AI Image Generation</h3>
+        <p>Concept art, product mockups, and campaign visuals generated and refined with AI tools, then hand-finished for a polished, on-brief result.</p>
+        <ul class="service-tags">
+          <li>Midjourney</li><li>Firefly</li><li>Stable Diffusion</li>
+        </ul>
+      </div>
+
+      <div class="service-card glass" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-clapperboard"></i></div>
+        <h3>Video Editing</h3>
+        <p>YouTube videos, reels, and promotional edits with clean pacing, color grading, and sound design that keep viewers watching to the end.</p>
+        <ul class="service-tags">
+          <li>YouTube Editing</li><li>Reels</li><li>Promo Videos</li>
+        </ul>
+      </div>
+
+      <div class="service-card glass" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-film"></i></div>
+        <h3>Motion Graphics &amp; VFX</h3>
+        <p>Animated titles, transitions, and visual effects built in After Effects to add a cinematic, high-production layer to any video.</p>
+        <ul class="service-tags">
+          <li>Motion Graphics</li><li>Visual Effects</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. SOFTWARE EXPERTISE ============ -->
+<section class="skills" id="skills">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow center"><span class="eyebrow-dot"></span> Toolkit</span>
+      <h2 class="section-title center">Software &amp; <span class="gradient-text">AI expertise</span></h2>
+      <p class="section-text center">The tools behind every project, run at a level clients can feel.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card" data-reveal data-percent="95">
+        <div class="skill-top">
+          <i class="fa-brands fa-adobe skill-logo ps"></i>
+          <span class="skill-percent">95%</span>
+        </div>
+        <h4>Adobe Photoshop</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:95%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="90">
+        <div class="skill-top">
+          <i class="fa-solid fa-clapperboard skill-logo ae"></i>
+          <span class="skill-percent">90%</span>
+        </div>
+        <h4>Adobe After Effects</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:90%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="88">
+        <div class="skill-top">
+          <i class="fa-solid fa-pen-nib skill-logo cd"></i>
+          <span class="skill-percent">88%</span>
+        </div>
+        <h4>CorelDRAW</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:88%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="92">
+        <div class="skill-top">
+          <i class="fa-brands fa-adobe skill-logo ai"></i>
+          <span class="skill-percent">92%</span>
+        </div>
+        <h4>Adobe Illustrator</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:92%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="93">
+        <div class="skill-top">
+          <i class="fa-solid fa-video skill-logo pr"></i>
+          <span class="skill-percent">93%</span>
+        </div>
+        <h4>Adobe Premiere Pro</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:93%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="85">
+        <div class="skill-top">
+          <i class="fa-solid fa-palette skill-logo canva"></i>
+          <span class="skill-percent">85%</span>
+        </div>
+        <h4>Canva</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:85%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="80">
+        <div class="skill-top">
+          <i class="fa-brands fa-figma skill-logo fig"></i>
+          <span class="skill-percent">80%</span>
+        </div>
+        <h4>Figma</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:80%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="90">
+        <div class="skill-top">
+          <i class="fa-solid fa-scissors skill-logo cap"></i>
+          <span class="skill-percent">90%</span>
+        </div>
+        <h4>CapCut</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:90%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="87">
+        <div class="skill-top">
+          <i class="fa-solid fa-robot skill-logo gpt"></i>
+          <span class="skill-percent">87%</span>
+        </div>
+        <h4>ChatGPT</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:87%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="89">
+        <div class="skill-top">
+          <i class="fa-solid fa-image skill-logo mj"></i>
+          <span class="skill-percent">89%</span>
+        </div>
+        <h4>Midjourney</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:89%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="84">
+        <div class="skill-top">
+          <i class="fa-solid fa-fire skill-logo ff"></i>
+          <span class="skill-percent">84%</span>
+        </div>
+        <h4>Adobe Firefly</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:84%"></span></div>
+      </div>
+
+      <div class="skill-card" data-reveal data-percent="82">
+        <div class="skill-top">
+          <i class="fa-solid fa-lightbulb skill-logo leo"></i>
+          <span class="skill-percent">82%</span>
+        </div>
+        <h4>Leonardo AI</h4>
+        <div class="progress-track"><span class="progress-fill" style="--w:82%"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. FEATURED PROJECTS / PORTFOLIO ============ -->
+<section class="portfolio" id="work">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow center"><span class="eyebrow-dot"></span> Selected Work</span>
+      <h2 class="section-title center">Featured <span class="gradient-text">projects</span></h2>
+      <p class="section-text center">A snapshot of recent design and video work across brands and industries.</p>
+    </div>
+
+    <div class="portfolio-filters" id="portfolioFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="video">Video</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <article class="project-card size-tall" data-cat="branding" data-reveal>
+        <div class="project-media grad-1"><i class="fa-solid fa-cube"></i></div>
+        <div class="project-overlay">
+          <span class="project-cat">Brand Identity</span>
+          <h4>Nova Skincare Rebrand</h4>
+          <p>Full identity system: logo, palette, packaging.</p>
+          <div class="project-actions">
+            <button class="btn-chip">View Project</button>
+            <button class="btn-chip outline">Live Preview</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="design" data-reveal>
+        <div class="project-media grad-2"><i class="fa-solid fa-icons"></i></div>
+        <div class="project-overlay">
+          <span class="project-cat">Logo Design</span>
+          <h4>Aether Fitness Mark</h4>
+          <p>Minimal geometric logo for a wellness studio.</p>
+          <div class="project-actions">
+            <button class="btn-chip">View Project</button>
+            <button class="btn-chip outline">Live Preview</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="design" data-reveal>
+        <div class="project-media grad-3"><i class="fa-solid fa-hashtag"></i></div>
+        <div class="project-overlay">
+          <span class="project-cat">Social Media</span>
+          <h4>Bloom Cafe Campaign</h4>
+          <p>30-post Instagram content set with motion covers.</p>
+          <div class="project-actions">
+            <button class="btn-chip">View Project</button>
+            <button class="btn-chip outline">Live Preview</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card size-tall" data-cat="video" data-reveal>
+        <div class="project-media grad-4"><i class="fa-solid fa-clapperboard"></i></div>
+        <div class="project-overlay">
+          <span class="project-cat">YouTube Editing</span>
+          <h4>TechTalk Weekly Series</h4>
+          <p>Long-form edits with motion titles and pacing.</p>
+          <div class="project-actions">
+            <button class="btn-chip">View Project</button>
+            <button class="btn-chip outline">Live Preview</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="design" data-reveal>
+        <div class="project-media grad-5"><i class="fa-solid fa-images"></i></div>
+        <div class="project-overlay">
+          <span class="project-cat">Photo Manipulation</span>
+          <h4>Surreal Product Shoot</h4>
+          <p>Composite visuals for a fragrance launch.</p>
+          <div class="project-actions">
+            <button class="btn-chip">View Project</button>
+            <button class="btn-chip outline">Live Preview</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="video" data-reveal>
+        <div class="project-media grad-6"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <div class="project-overlay">
+          <span class="project-cat">Instagram Reels</span>
+          <h4>Urban Threads Reel Pack</h4>
+          <p>Fast-cut reels for a streetwear label.</p>
+          <div class="project-actions">
+            <button class="btn-chip">View Project</button>
+            <button class="btn-chip outline">Live Preview</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card size-tall" data-cat="branding" data-reveal>
+        <div class="project-media grad-7"><i class="fa-solid fa-building"></i></div>
+        <div class="project-overlay">
+          <span class="project-cat">Business Branding</span>
+          <h4>Solace Capital Identity</h4>
+          <p>Corporate identity for a fintech advisory firm.</p>
+          <div class="project-actions">
+            <button class="btn-chip">View Project</button>
+            <button class="btn-chip outline">Live Preview</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="video" data-reveal>
+        <div class="project-media grad-8"><i class="fa-solid fa-heart"></i></div>
+        <div class="project-overlay">
+          <span class="project-cat">Wedding Edit</span>
+          <h4>Meera &amp; Kabir Cinematic Film</h4>
+          <p>Cinematic highlight reel with custom score sync.</p>
+          <div class="project-actions">
+            <button class="btn-chip">View Project</button>
+            <button class="btn-chip outline">Live Preview</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="design" data-reveal>
+        <div class="project-media grad-9"><i class="fa-solid fa-tv"></i></div>
+        <div class="project-overlay">
+          <span class="project-cat">YouTube Thumbnails</span>
+          <h4>GameSpot Thumbnail Set</h4>
+          <p>High-CTR thumbnail series for a gaming channel.</p>
+          <div class="project-actions">
+            <button class="btn-chip">View Project</button>
+            <button class="btn-chip outline">Live Preview</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. WHY CHOOSE ME ============ -->
+<section class="why-choose" id="why">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow center"><span class="eyebrow-dot"></span> The Difference</span>
+      <h2 class="section-title center">Why clients keep <span class="gradient-text">coming back</span></h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-item" data-reveal>
+        <i class="fa-solid fa-lightbulb"></i>
+        <h4>Creative Thinking</h4>
+        <p>Every brief gets original concepts, not recycled templates.</p>
+      </div>
+      <div class="why-item" data-reveal>
+        <i class="fa-solid fa-bolt"></i>
+        <h4>Fast Delivery</h4>
+        <p>Clear timelines and on-time drafts, every single time.</p>
+      </div>
+      <div class="why-item" data-reveal>
+        <i class="fa-solid fa-comments"></i>
+        <h4>Professional Communication</h4>
+        <p>Transparent updates so you're never left guessing.</p>
+      </div>
+      <div class="why-item" data-reveal>
+        <i class="fa-solid fa-face-smile"></i>
+        <h4>Client Satisfaction</h4>
+        <p>Revisions until the work truly feels right for your brand.</p>
+      </div>
+      <div class="why-item" data-reveal>
+        <i class="fa-solid fa-eye"></i>
+        <h4>Attention to Detail</h4>
+        <p>Pixel-level precision on every layer and every frame.</p>
+      </div>
+      <div class="why-item" data-reveal>
+        <i class="fa-solid fa-robot"></i>
+        <h4>AI-Powered Workflow</h4>
+        <p>Faster concepts and iterations without sacrificing craft.</p>
+      </div>
+      <div class="why-item" data-reveal>
+        <i class="fa-solid fa-tag"></i>
+        <h4>Affordable Pricing</h4>
+        <p>Agency-level output at freelance-friendly rates.</p>
+      </div>
+      <div class="why-item" data-reveal>
+        <i class="fa-solid fa-gem"></i>
+        <h4>Premium Quality</h4>
+        <p>Every deliverable is polished to a client-ready finish.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. WORK PROCESS ============ -->
+<section class="process" id="process">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow center"><span class="eyebrow-dot"></span> How It Works</span>
+      <h2 class="section-title center">A clear path from <span class="gradient-text">brief to launch</span></h2>
+    </div>
+
+    <div class="process-timeline">
+      <div class="process-line"></div>
+
+      <div class="process-step" data-reveal>
+        <div class="process-num">01</div>
+        <h4>Discuss Project</h4>
+        <p>We talk goals, audience, and scope so nothing gets lost in translation.</p>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="process-num">02</div>
+        <h4>Research</h4>
+        <p>I study your market and competitors to find an angle that stands out.</p>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="process-num">03</div>
+        <h4>Concept</h4>
+        <p>Initial directions and mood boards, so we agree on a look before full production.</p>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="process-num">04</div>
+        <h4>Design</h4>
+        <p>Full production of the chosen direction — design, edit, or animate.</p>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="process-num">05</div>
+        <h4>Feedback</h4>
+        <p>Structured revision rounds to refine every detail with you.</p>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="process-num">06</div>
+        <h4>Final Delivery</h4>
+        <p>Export-ready files in every format you need, on time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pricing" id="pricing">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow center"><span class="eyebrow-dot"></span> Investment</span>
+      <h2 class="section-title center">Pricing built around <span class="gradient-text">your project</span></h2>
+      <p class="section-text center">Straightforward packages. Custom scopes always available on request.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card" data-reveal>
+        <h4>Starter</h4>
+        <p class="price-desc">Single design assets for quick launches.</p>
+        <div class="price-amount"><span>$149</span><small>/ project</small></div>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> 1 logo or key visual</li>
+          <li><i class="fa-solid fa-check"></i> 2 revision rounds</li>
+          <li><i class="fa-solid fa-check"></i> Source files included</li>
+          <li><i class="fa-solid fa-check"></i> 4-day turnaround</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-full">Get Started</a>
+      </div>
+
+      <div class="price-card featured" data-reveal>
+        <span class="price-badge">Most Popular</span>
+        <h4>Growth</h4>
+        <p class="price-desc">Full brand or content package for growing teams.</p>
+        <div class="price-amount"><span>$499</span><small>/ project</small></div>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> Full brand identity or 5 videos</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited revisions</li>
+          <li><i class="fa-solid fa-check"></i> Priority delivery</li>
+          <li><i class="fa-solid fa-check"></i> AI-assisted concepting</li>
+          <li><i class="fa-solid fa-check"></i> Dedicated Slack channel</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+      </div>
+
+      <div class="price-card" data-reveal>
+        <h4>Studio</h4>
+        <p class="price-desc">Ongoing monthly design &amp; video support.</p>
+        <div class="price-amount"><span>$1,299</span><small>/ month</small></div>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> Unlimited design requests</li>
+          <li><i class="fa-solid fa-check"></i> Weekly video edits</li>
+          <li><i class="fa-solid fa-check"></i> Dedicated project board</li>
+          <li><i class="fa-solid fa-check"></i> Cancel anytime</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-full">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow center"><span class="eyebrow-dot"></span> Client Reviews</span>
+      <h2 class="section-title center">Don't take my <span class="gradient-text">word for it</span></h2>
+    </div>
+
+    <div class="testimonial-slider">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card glass">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Rohit rebuilt our entire brand identity in two weeks and it looked better than what our last agency delivered in two months."</p>
+          <div class="testimonial-author">
+            <span class="avatar" style="--c:#6E3BFF">MK</span>
+            <div><strong>Meera Kapoor</strong><small>Founder, Nova Skincare</small></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Our YouTube retention jumped after Rohit took over editing. He understands pacing and hooks better than anyone we've hired."</p>
+          <div class="testimonial-author">
+            <span class="avatar" style="--c:#00E5FF">AS</span>
+            <div><strong>Arjun Sethi</strong><small>Creator, TechTalk Weekly</small></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Professional, fast, and genuinely creative. Rohit turned a vague brief into a poster series that outperformed our expectations."</p>
+          <div class="testimonial-author">
+            <span class="avatar" style="--c:#A855F7">JD</span>
+            <div><strong>Jaya Desai</strong><small>Marketing Lead, Bloom Cafe</small></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Our wedding film exceeded everything we imagined. The pacing, the color grade, the music sync — every detail was intentional."</p>
+          <div class="testimonial-author">
+            <span class="avatar" style="--c:#3B82F6">MK</span>
+            <div><strong>Meera &amp; Kabir</strong><small>Clients, Wedding Film</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn" id="sliderPrev" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="sliderNext" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. ACHIEVEMENTS ============ -->
+<section class="achievements">
+  <div class="section-inner achievements-grid">
+    <div class="achieve-item" data-reveal>
+      <span class="achieve-number" data-count="180">0</span><span class="stat-plus">+</span>
+      <p>Projects Delivered</p>
+    </div>
+    <div class="achieve-item" data-reveal>
+      <span class="achieve-number" data-count="60">0</span><span class="stat-plus">+</span>
+      <p>Happy Clients</p>
+    </div>
+    <div class="achieve-item" data-reveal>
+      <span class="achieve-number" data-count="12">0</span><span class="stat-plus">+</span>
+      <p>Countries Served</p>
+    </div>
+    <div class="achieve-item" data-reveal>
+      <span class="achieve-number" data-count="4">0</span><span class="stat-plus">+</span>
+      <p>Years Experience</p>
+    </div>
+    <div class="achieve-item" data-reveal>
+      <span class="achieve-number" data-count="98">0</span><span class="stat-plus">%</span>
+      <p>Positive Reviews</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="section-inner faq-wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow center"><span class="eyebrow-dot"></span> Questions</span>
+      <h2 class="section-title center">Frequently asked <span class="gradient-text">questions</span></h2>
+    </div>
+
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <button class="faq-question">
+          How much do you charge?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Pricing depends on scope — check the packages above, or reach out with your brief for a custom quote. Most single-asset projects start around $149.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How long does a project take?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Simple design assets typically take 3–5 days. Full brand identities or video packages usually take 1–3 weeks depending on complexity.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Can you edit videos?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Yes — YouTube videos, reels, promotional content, motion graphics, and full-length wedding or event films are all part of my regular work.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you use AI?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>I use AI tools like Midjourney, Firefly, and ChatGPT to speed up concepting and exploration, then refine everything by hand for a polished result.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Can I request revisions?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. Every package includes revision rounds, and the Growth package includes unlimited revisions until you're satisfied.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What file formats do you provide?
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>You'll receive final files in the formats you need — PNG, JPG, SVG, PDF for design, and MP4, MOV, or ProRes for video — plus source files on request.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="section-inner contact-grid">
+    <div class="contact-left" data-reveal>
+      <span class="eyebrow"><span class="eyebrow-dot"></span> Get In Touch</span>
+      <h2 class="section-title">Let's build something <span class="gradient-text">amazing</span></h2>
+      <p class="section-text">
+        Have a project in mind? Tell me about it — I typically reply within 24 hours with next steps
+        and a clear timeline.
+      </p>
+
+      <div class="contact-info">
+        <a href="mailto:hello@rohit.studio" class="contact-info-item">
+          <i class="fa-solid fa-envelope"></i> hello@rohit.studio
+        </a>
+        <a href="tel:+911234567890" class="contact-info-item">
+          <i class="fa-solid fa-phone"></i> +91 123 456 7890
+        </a>
+        <span class="contact-info-item">
+          <i class="fa-solid fa-location-dot"></i> Available worldwide, remote-first
+        </span>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="contact-right" data-reveal>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <input type="text" id="fieldName" name="name" placeholder=" " required>
+            <label for="fieldName">Full Name</label>
+            <span class="field-error">Please enter your name</span>
+          </div>
+          <div class="field">
+            <input type="email" id="fieldEmail" name="email" placeholder=" " required>
+            <label for="fieldEmail">Email Address</label>
+            <span class="field-error">Please enter a valid email</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <input type="tel" id="fieldPhone" name="phone" placeholder=" ">
+            <label for="fieldPhone">Phone (optional)</label>
+          </div>
+          <div class="field">
+            <select id="fieldType" name="projectType" required>
+              <option value="" disabled selected></option>
+              <option>Graphic Design</option>
+              <option>Video Editing</option>
+              <option>Branding</option>
+              <option>Other</option>
+            </select>
+            <label for="fieldType" class="label-select">Project Type</label>
+            <span class="field-error">Please choose a project type</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <select id="fieldBudget" name="budget" required>
+            <option value="" disabled selected></option>
+            <option>Under $500</option>
+            <option>$500 – $1,500</option>
+            <option>$1,500 – $5,000</option>
+            <option>$5,000+</option>
+          </select>
+          <label for="fieldBudget" class="label-select">Project Budget</label>
+          <span class="field-error">Please choose a budget range</span>
+        </div>
+
+        <div class="field">
+          <textarea id="fieldMessage" name="message" rows="4" placeholder=" " required></textarea>
+          <label for="fieldMessage">Tell me about your project</label>
+          <span class="field-error">Please add a short message</span>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-large magnetic">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <a href="#" class="btn btn-ghost btn-large magnetic">
+            <span>Schedule Call</span>
+            <i class="fa-solid fa-calendar"></i>
+          </a>
+        </div>
+
+        <p class="form-success" id="formSuccess"><i class="fa-solid fa-circle-check"></i> Thanks — your message is in. I'll reply within 24 hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 12. FOOTER ============ -->
+<footer class="footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo">
+        <span class="logo-frame">RH</span>
+        <span class="logo-text">Rohit<em>.studio</em></span>
+      </a>
+      <p>Freelance graphic designer &amp; video editor helping brands look and move like industry leaders.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h5>Quick Links</h5>
+      <a href="#about">About</a>
+      <a href="#work">Portfolio</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+    </div>
+
+    <div class="footer-links">
+      <h5>Services</h5>
+      <a href="#services">Graphic Design</a>
+      <a href="#services">Video Editing</a>
+      <a href="#services">Motion Graphics</a>
+      <a href="#services">AI Visuals</a>
+    </div>
+
+    <div class="footer-links">
+      <h5>Contact</h5>
+      <a href="mailto:hello@rohit.studio">hello@rohit.studio</a>
+      <a href="tel:+911234567890">+91 123 456 7890</a>
+      <a href="#contact">Start a project</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Rohit Studio. All rights reserved.</p>
+    <p>Designed by Rohit</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
